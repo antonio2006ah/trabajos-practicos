@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor-climas {
+    width: 100%;
+    max-width: 560px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.contenedor-climas h1 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.botones-clima {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botones-clima button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #334155;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botones-clima button:hover {
+    background-color: #0f172a;
+}
+
+.visor img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.visor p {
+    font-size: 1rem;
+    color: #334155;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.btn-volver {
+    display: inline-block;
+    background-color: #0878da;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #065ea8;
+}

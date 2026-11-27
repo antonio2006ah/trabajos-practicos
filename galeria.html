@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <title>TP6 - Climas y Paisajes</title>
+</head>
+<body>
+    <section class="contenedor-climas">
+        <h1>Elige un clima o paisaje</h1>
+
+        <div class="botones-clima">
+            <button onclick="mostrarClima(0)">Atardecer</button>
+            <button onclick="mostrarClima(1)">Lluvia</button>
+            <button onclick="mostrarClima(2)">Playa</button>
+            <button onclick="mostrarClima(3)">Campo</button>
+        </div>
+
+        <!-- Imagen arriba y descripción abajo controladas con innerHTML -->
+        <div id="visor" class="visor"></div>
+
+        <a href="../index.html" class="btn-volver">Volver al inicio</a>
+    </section>
+
+    <script src="galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+
+body {
+    background-color: rgb(250, 0, 0);
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+    gap: 35px;
+}
+
+.Logo img {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    margin-right: auto;
+}
+
+.Info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px;
+
+    padding: 12px 18px;
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn2 {
+    display: flex;
+    align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.btn2 button {
+    
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 8px;
+
+    padding: 12px 18px;
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}

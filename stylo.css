@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #e0f2fe 0%, #f8fafc 55%, #eef2ff 100%);
+    color: #0f172a;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 68px;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #065ea8 0%, rgb(8, 120, 218) 55%, #0ea5e9 100%);
+    box-shadow: 0 6px 20px rgba(8, 120, 218, 0.28);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+a {
+    position: relative;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 3px;
+    height: 2px;
+    background-color: #bae6fd;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+a:active {
+    transform: translateY(0);
+}
+
+.portada {
+    max-width: 720px;
+    margin: 90px auto;
+    padding: 48px 32px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.portada h1 {
+    font-size: 2.2rem;
+    color: #065ea8;
+    margin-bottom: 12px;
+}
+
+.portada p {
+    font-size: 1.05rem;
+    color: #475569;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 5%;
+        height: auto;
+        min-height: 64px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 8px 0;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+}
